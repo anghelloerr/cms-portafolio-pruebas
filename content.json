@@ -103,6 +103,12 @@
           "title": "Documento de prueba",
           "url": "assets/documents/cv.pdf",
           "linkLabel": "Abrir PDF ficticio"
+        },
+        {
+          "title": "Audio sintético de prueba",
+          "description": "Tono sintético de dos segundos; sin voz ni grabaciones personales.",
+          "audio": "assets/audio/f6dbb2b4a143600a4fb55dacda32a6cb5673aef0b080cb853bfa496a9fd69198.mp3",
+          "transcript": "Tono de prueba."
         }
       ]
     },
