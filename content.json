@@ -1,0 +1,166 @@
+{
+  "meta": {
+    "title": "Ensayo del CMS — contenido ficticio",
+    "description": "Datos ficticios",
+    "language": "es",
+    "updated": "2026-10-16",
+    "source": "Fixture",
+    "siteUrl": "https://anghelloerr.github.io/cms-portafolio-pruebas/"
+  },
+  "profile": {
+    "name": "Persona de ejemplo",
+    "shortName": "Prueba",
+    "location": "Lima",
+    "headline": "Ingeniería",
+    "intro": "Introducción",
+    "bio": "Sitio de prueba del CMS. Todos los proyectos, textos y archivos de esta página son ficticios; no representan experiencia profesional.",
+    "portrait": "assets/images/profile.png",
+    "portraitAlt": "Retrato de prueba",
+    "cv": "assets/documents/cv.pdf",
+    "links": [],
+    "email": "example@example.org",
+    "secondaryEmail": "other@example.org",
+    "certificatesUrl": "https://example.org/",
+    "current": []
+  },
+  "publication": {
+    "title": "Artículo de prueba",
+    "authors": [
+      "Persona de prueba"
+    ],
+    "year": 2025,
+    "date": "2025",
+    "journal": "Revista",
+    "publisher": "Editorial",
+    "volume": "1",
+    "issue": "1",
+    "article": "1",
+    "doi": "10.0000/example",
+    "url": "https://example.org/paper",
+    "summary": "Resumen",
+    "contribution": "Diseño",
+    "tags": [],
+    "source": "Prueba",
+    "id": "publication"
+  },
+  "publications": [
+    {
+      "title": "Artículo de prueba",
+      "authors": [
+        "Persona de prueba"
+      ],
+      "year": 2025,
+      "date": "2025",
+      "journal": "Revista",
+      "publisher": "Editorial",
+      "volume": "1",
+      "issue": "1",
+      "article": "1",
+      "doi": "10.0000/example",
+      "url": "https://example.org/paper",
+      "summary": "Resumen",
+      "contribution": "Diseño",
+      "tags": [],
+      "source": "Prueba",
+      "id": "publication"
+    }
+  ],
+  "projects": [
+    {
+      "id": "alpha",
+      "code": "alpha",
+      "title": "Proyecto alpha",
+      "institution": "Laboratorio de ejemplo",
+      "period": "2024–2025",
+      "category": "Robótica",
+      "description": "Descripción original alpha",
+      "contribution": "Participación documentada",
+      "tags": [
+        "Robótica"
+      ],
+      "result": null,
+      "image": null,
+      "url": null,
+      "repository": null,
+      "source": "Fuente pública de ejemplo",
+      "featured": true,
+      "kind": "Proyecto",
+      "cover": "robotics",
+      "experienceId": "lab",
+      "evidence": [
+        {
+          "title": "Imagen de prueba",
+          "description": "Ilustración sintética para comprobar archivos.",
+          "image": "assets/images/profile.png",
+          "alt": "Gráfico sintético azul"
+        },
+        {
+          "title": "Video de prueba",
+          "description": "Clip sintético de dos segundos.",
+          "video": "assets/videos/muestra.mp4"
+        },
+        {
+          "title": "Documento de prueba",
+          "url": "assets/documents/cv.pdf",
+          "linkLabel": "Abrir PDF ficticio"
+        }
+      ]
+    },
+    {
+      "id": "quadruped",
+      "code": "quadruped",
+      "title": "Proyecto quadruped",
+      "institution": "Laboratorio de ejemplo",
+      "period": "2024–2025",
+      "category": "Robótica",
+      "description": "Descripción original quadruped",
+      "contribution": "Participación documentada",
+      "tags": [
+        "Robótica"
+      ],
+      "result": null,
+      "image": null,
+      "url": null,
+      "repository": null,
+      "source": "Fuente pública de ejemplo",
+      "featured": true,
+      "kind": "Proyecto",
+      "cover": "robotics",
+      "experienceId": "lab",
+      "evidence": []
+    }
+  ],
+  "experience": [
+    {
+      "id": "lab",
+      "period": "Abr. – oct. 2026",
+      "institution": "Laboratorio de ejemplo",
+      "role": "Investigación",
+      "location": "Lima",
+      "current": false,
+      "text": "Experiencia",
+      "projectIds": [
+        "alpha",
+        "quadruped"
+      ]
+    }
+  ],
+  "research": [],
+  "aerospace": {
+    "intro": "Espacio",
+    "text": "Texto",
+    "skills": []
+  },
+  "biomedical": {
+    "intro": "Bio",
+    "text": "Texto",
+    "skills": [],
+    "note": "Intereses"
+  },
+  "teaching": [],
+  "education": [],
+  "training": [],
+  "leadership": [],
+  "skills": [],
+  "posts": []
+}
