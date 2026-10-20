@@ -114,7 +114,11 @@ pages.set('posts.html',shell('Bitácora | '+p.shortName,'<section class="contain
 for(const post of data.posts||[]) pages.set('posts/'+post.id+'.html',shell(post.title+' | '+p.shortName,editorial.postPage(post)+compactFooter(),'posts/'+post.id+'.html',post.summary));
 for (const [file, content] of pages) await writeFile(path.join(out,file), content);
 await cp(path.join(root,'.nojekyll'),path.join(out,'.nojekyll'));
-await cp(path.join(root,'assets'),path.join(out,'assets'),{recursive:true});
+// Copy only reviewed public resources; unrelated tracked assets stay in Git.
+const publicAssets=new Set(['assets/app.js','assets/theme.js','assets/favicon.svg','assets/styles.css','assets/identity.css','assets/portfolio.css']);
+const collectAssets=value=>{if(typeof value==='string'&&value.startsWith('assets/'))publicAssets.add(value);else if(Array.isArray(value))value.forEach(collectAssets);else if(value&&typeof value==='object')Object.values(value).forEach(collectAssets);};
+collectAssets(data);
+for(const asset of publicAssets){safeUrl(asset);const dest=path.resolve(out,asset);if(!dest.startsWith(out+path.sep))throw Error('Invalid asset path');await mkdir(path.dirname(dest),{recursive:true});await cp(path.join(root,asset),dest);}
 await mkdir(path.join(out,'assets/documents'),{recursive:true});
 for(const pub of editorial.publications) await writeFile(path.join(out,editorial.bibPath(pub)),editorial.bib(pub));
 await finalize(out,data);
